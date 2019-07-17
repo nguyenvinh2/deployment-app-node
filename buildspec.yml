@@ -20,4 +20,6 @@ artifacts:
     - index.js
     - index.test.js
     - package.json
-    - node_modules/*
+    - node_modules/async/*
+    - node_modules/lodash/*
+    - lib/server.js
