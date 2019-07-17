@@ -9,7 +9,6 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
-      - export PORT=8081
       - npm test
   build:
     commands:
