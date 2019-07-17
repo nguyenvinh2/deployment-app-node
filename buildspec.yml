@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10  
+    commands:
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - export PORT=8081
+      - npm est
+  build:
+    commands:
+      - node index.js
+  post_build:
+    commands:
+      - echo completed on `date`
+artifacts:
+  files:
+    - index.js
+    - index.test.js
+    - package.json
+    - node_modules/*
